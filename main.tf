@@ -10,12 +10,11 @@ resource "aws_instance" "ubuntuos" {
     Name = "UbuntuOS"
   }
 }
-resource "aws_s3_bucket" "dev_bucket" {
-  bucket = "giri-test-bucket"
-  region = "eu-central-1"
+resource "aws_s3_bucket" "giri-dev_bucket" {
+  bucket = "giri-test-bucket-new"
 
   tags = {
-    Name        = "My bucket"
-    Environment = "Dev"
+    Name        = "My bucket new"
+    Environment = "Dev new"
   }
 }
