@@ -10,11 +10,11 @@ resource "aws_instance" "ubuntuos" {
     Name = "UbuntuOS"
   }
 }
-resource "aws_s3_bucket" "giri-dev_bucket" {
-  bucket = "giri-test-bucket-new"
+resource "aws_s3_bucket" "opsmx-dev_bucket" {
+  bucket = "myfirstbucketopsmx"
 
   tags = {
-    Name        = "My bucket new"
-    Environment = "Dev new"
+    Name        = "My bucket opsmx"
+    Environment = "opsmx dev"
   }
 }
