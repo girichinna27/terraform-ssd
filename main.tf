@@ -1,4 +1,3 @@
-#### My first Terraform code
 provider "aws" {
   region = "us-east-1"
 }
