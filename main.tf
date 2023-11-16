@@ -11,7 +11,8 @@ resource "aws_instance" "ubuntuos" {
   }
 }
 resource "aws_s3_bucket" "dev_bucket" {
-  bucket = "my-tf-test-bucket"
+  bucket = "giri-test-bucket"
+  region = "eu-central-1"
 
   tags = {
     Name        = "My bucket"
